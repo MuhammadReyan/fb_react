@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+
+.topbarContainer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background: #1877f2;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* Logo */
+
+.logo {
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.topbarLeft {
+    flex: 3;
+}
+
+.topbarCenter {
+    flex: 5;
+}
+
+
+.topbarRight {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.topbarImage {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+
+.searchBar {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.searchicon {
+    font-size: 20px !important;
+    margin-left: 20px;
+}
+
+.searchInput {
+    width: 100%;
+    border: none;
+}
+
+
+.searchInput:focus {
+    outline: none;
+}
+
+.topbarLink {
+    margin-right: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.topbarIcons {
+    display: flex;
+}
+
+.topbarIconItem {
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.topbarIconBadge {
+    position: absolute;
+    background-color: red;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -5px;
+    right: -5px;
+    font-size: 12px;
+}
